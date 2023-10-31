@@ -1,0 +1,377 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS" target="8" version="2">
+  <project Name="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS">
+    <configuration Name="Common" arm_architecture="v7EM" arm_core_type="Cortex-M4" arm_endian="Little" arm_fp_abi="Hard" arm_fpu_type="FPv4-SP-D16" arm_linker_heap_size="0" arm_linker_process_stack_size="0" arm_linker_stack_size="2048" arm_linker_treat_warnings_as_errors="No" arm_simulator_memory_simulation_parameter="RX 00000000,00080000,FFFFFFFF;RWX 20000000,00020000,CDCDCDCD" arm_target_device_name="nRF52833_xxAA" arm_target_interface_type="SWD" build_intermediate_directory="Output/$(ProjectName) $(Configuration)/Obj/$(FolderName)" c_additional_options="-mfloat-abi=hard;-ffunction-sections;-mfpu=fpv4-sp-d16;-std=c11;-g3;-fdata-sections;-O3;-Wall;-mthumb;-mcpu=cortex-m4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;" c_preprocessor_definitions="UWBMAC_BUF_PLATFORM_H=&quot;uwbmac/uwbmac_buf_malloc.h&quot;;UWBMAC_VERSION=&quot;R11.9.2&quot;;CLI_BUILD;BOARD_CUSTOM;USB_ENABLE;NRF_CRYPTO_BACKEND_MBEDTLS_ENABLED=1;NRF_CRYPTO_ALLOCATOR=NRF_CRYPTO_ALLOCATOR_MALLOC;MBEDTLS_CMAC_C;PROJECT_NAME=&quot;DW3_QM33_SDK&quot;;NRF52833_XXAA;UWBSTACK" c_user_include_directories="../../../../../Libs/dwt_uwb_driver/Inc;../../../../../Libs/uwbstack/uwbstack_lib/include/compat/common;../../../../../Libs/uwbstack/uwbstack_lib/include/compat/cmsis;../../../../../Libs/uwbstack/uwbstack_lib/include/compat;../../../../../Libs/uwbstack/uwbstack_lib/include/mcps;../../../../../Libs/uwbstack/uwbstack_lib/include;../../../../../Libs/uwbstack/uwbstack_lib/include/uwbmac;../../../../../Libs/uwbstack/uwbstack_lib/include/uwb_driver_interface;;;;;../../../../../Src/Apps/Src/fira;;../../../../../Src/Helpers/Inc;;../../../../../Src/Apps/Src/tcfm_tcwm;../../../../../Src/Apps/Src/tcfm_tcwm/tcfm;../../../../../Src/Apps/Src/tcfm_tcwm/tcwm;;../../../../../Src/Apps/Src/listener2;../../../../../Src/Apps/Src/common;../../../../../Src/Apps/Src/listener2/FreeRTOS;;../../../../../Src/Comm/Inc;;../../../../../Src/Apps/Src/reporter;../../../../../Src/Apps/Src/reporter/usb_reporter;;../../../../../Src/UWB;../../../../../Src/UWB/dw;../../../../../Src/UWB/FreeRTOS;;../../../../../Src/Apps/Src/Inc;../../../../../Src/Apps/Src/common/app/common;../../../../../Src/Apps/Src/common/cmd;../../../../../Src/Apps/Src/common/config;../../../../../Src/Apps/Src/common/controlTask;../../../../../Src/Apps/Src/common/defaultTask;../../../../../Src/Apps/Src/common/flushTask;../../../../../Src/Apps/Src/common/thread;../../../../../Src/Apps/Src/common/usb_uart;../../../../../Src/Apps/Inc;;../../../../../Src/HAL/Inc;;../../../../../Src/Boards/Src/DWM3001CDK/FreeRTOS/Common;../../../../../Src/Boards/Src/DWM3001CDK/FreeRTOS/DW3_QM33_SDK;../../../../../Src/Boards/Inc;;../../../../../Src/OSAL/Src/FreeRTOS;../../../../../Src/OSAL/Inc;;../../../../../Src/UWBUtils;;../../../../../Src/AppConfig/Inc;../../../../../Src/AppConfig/DefaultConfigs/DW3_QM33_SDK;;../../../../../Src/EventManager;;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/external/freertos/source/include;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/external/freertos/portable/GCC/nrf52;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/external/freertos/portable/CMSIS/nrf52;;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/integration/nrfx/legacy;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/modules/nrfx;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/modules/nrfx/hal;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/modules/nrfx/drivers/include;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/boards;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/atomic;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/delay;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/fifo;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/log;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/log/src;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/uart;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/usbd;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/timer;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/usbd/class/cdc;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/usbd/class/cdc/acm;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/experimental_section_vars;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/strerror;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/modules/nrfx/mdk;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/integration/nrfx;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/toolchain/cmsis/include;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/util;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/drivers_nrf/nrf_soc_nosd;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/external/utf_converter;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/external/mbedtls/include;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/fds;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/crypto;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/crypto/backend/cc310;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/crypto/backend/mbedtls;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/crypto/backend/cifra;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/crypto/backend/oberon;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/crypto/backend/nrf_hw;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/crypto/backend/optiga;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/stack_info;../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0;../../../../../Src/Boards/Src/DWM3001CDK/FreeRTOS;;../ProjectDefinition;;;" debug_register_definition_file="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/modules/nrfx/mdk/nrf52840.svd" debug_start_from_entry_point_symbol="No" debug_target_connection="J-Link" gcc_c_language_standard="c11" gcc_cplusplus_language_standard="c++11" gcc_debugging_level="Level 3" gcc_entry_point="Reset_Handler" gcc_optimization_level="Level 3 for more speed" linker_additional_options="--whole-archive;../../../../../Libs/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.14.a;../../../../../Libs/uwbstack/uwbstack_lib/lib/cmsis_v1/embedded_mac/libembedded_mac_arm-m4-hfp_R11.9.2.a;--no-whole-archive" linker_output_format="hex" linker_printf_fmt_level="long" linker_printf_fp_enabled="Float" linker_printf_width_precision_supported="Yes" linker_scanf_fmt_level="long" linker_section_placement_file="flash_placement.xml" linker_section_placement_macros="FLASH_PH_START=0x0;FLASH_PH_SIZE=0x80000;RAM_PH_START=0x20000000;RAM_PH_SIZE=0x20000;FLASH_START=0;FLASH_SIZE=0xe4000;RAM_START=0x20000000;RAM_SIZE=0x20000;DEFAULT_CONFIG_START=0x1d000;DEFAULT_CONFIG_SIZE=0x400;FCONFIG_START=0x1e000;FCONFIG_SIZE=0x1000;INIT_START=0x1f000" linker_section_placements_segments="FLASH RX 0x0 0x100000;RAM1 RWX 0x20000000 0x40000" macros="CMSIS_CONFIG_TOOL=../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/external_tools/cmsisconfig/CMSIS_Configuration_Wizard.jar" project_directory="" project_type="Executable" />
+    <folder Name="Startup">
+      <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/modules/nrfx/mdk/ses_startup_nrf_common.s" />
+      <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/modules/nrfx/mdk/ses_startup_nrf52833.s" />
+      <file file_name="$(StudioDir)/source/thumb_crt0.s" />
+    </folder>
+    <folder Name="Projects">
+      <folder Name="DW3_QM33_SDK">
+        <folder Name="FreeRTOS">
+          <folder Name="DW3_QM33_SDK-FreeRTOS-Common">
+            <file file_name="../../DW3_QM33_SDK-FreeRTOS-Common/main.c" />
+            <file file_name="../../DW3_QM33_SDK-FreeRTOS-Common/hooks.c" />
+          </folder>
+          <folder Name="DWM3001CDK">
+            <folder Name="ProjectDefinition">
+              <file file_name="../ProjectDefinition/ProjectName.c" />
+            </folder>
+            <file file_name="../isr_hs.c" />
+          </folder>
+        </folder>
+      </folder>
+    </folder>
+    <folder Name="SDK_BSP">
+      <folder Name="Nordic">
+        <folder Name="NORDIC_SDK_17_1_0">
+          <folder Name="components">
+            <folder Name="boards">
+              <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/boards/boards.c" />
+            </folder>
+            <folder Name="libraries">
+              <folder Name="fifo">
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/fifo/app_fifo.c" />
+              </folder>
+              <folder Name="uart">
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/uart/app_uart_fifo.c" />
+              </folder>
+              <folder Name="util">
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/util/app_util_platform.c" />
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/util/app_error.c" />
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/util/app_error_weak.c" />
+              </folder>
+              <folder Name="atomic">
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/atomic/nrf_atomic.c" />
+              </folder>
+              <folder Name="queue">
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/queue/nrf_queue.c" />
+              </folder>
+              <folder Name="crypto">
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/crypto/nrf_crypto_aes.c" />
+                <folder Name="backend">
+                  <folder Name="mbedtls">
+                    <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_aes.c" />
+                    <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_aes_aead.c" />
+                  </folder>
+                  <folder Name="nrf_hw">
+                    <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/crypto/backend/nrf_hw/nrf_hw_backend_init.c" />
+                    <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/crypto/backend/nrf_hw/nrf_hw_backend_rng.c" />
+                  </folder>
+                </folder>
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/crypto/nrf_crypto_rng.c" />
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/crypto/nrf_crypto_init.c" />
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/crypto/nrf_crypto_aead.c" />
+              </folder>
+              <folder Name="usbd">
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/usbd/app_usbd.c" />
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/usbd/app_usbd_core.c" />
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/usbd/app_usbd_serial_num.c" />
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/usbd/app_usbd_string_desc.c" />
+                <folder Name="class">
+                  <folder Name="cdc">
+                    <folder Name="acm">
+                      <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/usbd/class/cdc/acm/app_usbd_cdc_acm.c" />
+                    </folder>
+                  </folder>
+                </folder>
+              </folder>
+            </folder>
+          </folder>
+          <folder Name="integration">
+            <folder Name="nrfx">
+              <folder Name="legacy">
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/integration/nrfx/legacy/nrf_drv_spi.c" />
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/integration/nrfx/legacy/nrf_drv_clock.c" />
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/integration/nrfx/legacy/nrf_drv_power.c" />
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/integration/nrfx/legacy/nrf_drv_uart.c" />
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/integration/nrfx/legacy/nrf_drv_rng.c" />
+              </folder>
+            </folder>
+          </folder>
+          <folder Name="modules">
+            <folder Name="nrfx">
+              <folder Name="drivers">
+                <folder Name="src">
+                  <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/modules/nrfx/drivers/src/nrfx_rng.c" />
+                  <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/modules/nrfx/drivers/src/nrfx_gpiote.c" />
+                  <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/modules/nrfx/drivers/src/nrfx_rtc.c" />
+                  <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/modules/nrfx/drivers/src/nrfx_spi.c" />
+                  <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/modules/nrfx/drivers/src/nrfx_spim.c" />
+                  <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/modules/nrfx/drivers/src/nrfx_timer.c" />
+                  <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/modules/nrfx/drivers/src/nrfx_uart.c" />
+                  <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/modules/nrfx/drivers/src/nrfx_uarte.c" />
+                  <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/modules/nrfx/drivers/src/nrfx_power.c" />
+                  <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/modules/nrfx/drivers/src/nrfx_wdt.c" />
+                  <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/modules/nrfx/drivers/src/nrfx_clock.c" />
+                  <folder Name="prs">
+                    <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/modules/nrfx/drivers/src/prs/nrfx_prs.c" />
+                  </folder>
+                  <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/modules/nrfx/drivers/src/nrfx_usbd.c" />
+                  <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/modules/nrfx/drivers/src/nrfx_systick.c" />
+                </folder>
+              </folder>
+              <folder Name="hal">
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/modules/nrfx/hal/nrf_nvmc.c" />
+              </folder>
+              <folder Name="soc">
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/modules/nrfx/soc/nrfx_atomic.c" />
+              </folder>
+              <folder Name="mdk">
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/modules/nrfx/mdk/system_nrf52833.c" />
+              </folder>
+            </folder>
+          </folder>
+          <folder Name="external">
+            <folder Name="mbedtls">
+              <folder Name="library">
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/external/mbedtls/library/aes.c" />
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/external/mbedtls/library/arc4.c" />
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/external/mbedtls/library/blowfish.c" />
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/external/mbedtls/library/camellia.c" />
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/external/mbedtls/library/ccm.c" />
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/external/mbedtls/library/chacha20.c" />
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/external/mbedtls/library/chachapoly.c" />
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/external/mbedtls/library/cipher.c" />
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/external/mbedtls/library/cipher_wrap.c" />
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/external/mbedtls/library/cmac.c" />
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/external/mbedtls/library/des.c" />
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/external/mbedtls/library/gcm.c" />
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/external/mbedtls/library/platform_util.c" />
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/external/mbedtls/library/poly1305.c" />
+              </folder>
+            </folder>
+            <folder Name="freertos">
+              <folder Name="source">
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/external/freertos/source/croutine.c" />
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/external/freertos/source/event_groups.c" />
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/external/freertos/source/list.c" />
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/external/freertos/source/queue.c" />
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/external/freertos/source/stream_buffer.c" />
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/external/freertos/source/tasks.c" />
+                <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/external/freertos/source/timers.c" />
+                <folder Name="portable">
+                  <folder Name="MemMang">
+                    <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/external/freertos/source/portable/MemMang/heap_4.c" />
+                  </folder>
+                </folder>
+              </folder>
+              <folder Name="portable">
+                <folder Name="GCC">
+                  <folder Name="nrf52">
+                    <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/external/freertos/portable/GCC/nrf52/port.c" />
+                  </folder>
+                </folder>
+                <folder Name="CMSIS">
+                  <folder Name="nrf52">
+                    <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/external/freertos/portable/CMSIS/nrf52/port_cmsis.c" />
+                    <file file_name="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/external/freertos/portable/CMSIS/nrf52/port_cmsis_systick.c" />
+                  </folder>
+                </folder>
+              </folder>
+            </folder>
+          </folder>
+        </folder>
+      </folder>
+    </folder>
+    <folder Name="Src">
+      <folder Name="EventManager">
+        <folder Name="FreeRTOS">
+          <file file_name="../../../../../Src/EventManager/FreeRTOS/EventManager.c" />
+        </folder>
+      </folder>
+      <folder Name="AppConfig">
+        <folder Name="DWM3001CDK">
+          <folder Name="FreeRTOS">
+            <file file_name="../../../../../Src/AppConfig/DWM3001CDK/FreeRTOS/config.c" />
+          </folder>
+        </folder>
+      </folder>
+      <folder Name="UWBUtils">
+        <file file_name="../../../../../Src/UWBUtils/util.c" />
+        <file file_name="../../../../../Src/UWBUtils/translate.c" />
+      </folder>
+      <folder Name="OSAL">
+        <folder Name="Src">
+          <folder Name="FreeRTOS">
+            <file file_name="../../../../../Src/OSAL/Src/FreeRTOS/alloc.c" />
+            <file file_name="../../../../../Src/OSAL/Src/FreeRTOS/cmsis_os.c" />
+          </folder>
+          <file file_name="../../../../../Src/OSAL/Src/task_signal.c" />
+        </folder>
+      </folder>
+      <folder Name="Boards">
+        <folder Name="Src">
+          <folder Name="Common_NRF">
+            <file file_name="../../../../../Src/Boards/Src/Common_NRF/board.c" />
+          </folder>
+          <folder Name="DWM3001CDK">
+            <folder Name="FreeRTOS">
+              <folder Name="DW3_QM33_SDK">
+                <file file_name="../../../../../Src/Boards/Src/DWM3001CDK/FreeRTOS/DW3_QM33_SDK/DWM3001CDK.c" />
+              </folder>
+            </folder>
+            <file file_name="../../../../../Src/Boards/Src/DWM3001CDK/rf_tuning_config.c" />
+          </folder>
+        </folder>
+      </folder>
+      <folder Name="HAL">
+        <folder Name="Src">
+          <folder Name="nrfx">
+            <file file_name="../../../../../Src/HAL/Src/nrfx/HAL_error.c" />
+            <file file_name="../../../../../Src/HAL/Src/nrfx/HAL_sleep.c" />
+            <file file_name="../../../../../Src/HAL/Src/nrfx/HAL_DW3000.c" />
+            <file file_name="../../../../../Src/HAL/Src/nrfx/HAL_gpio.c" />
+            <file file_name="../../../../../Src/HAL/Src/nrfx/HAL_timer.c" />
+            <file file_name="../../../../../Src/HAL/Src/nrfx/HAL_RTC.c" />
+            <file file_name="../../../../../Src/HAL/Src/nrfx/HAL_SPI.c" />
+            <file file_name="../../../../../Src/HAL/Src/nrfx/HAL_uart.c" />
+            <file file_name="../../../../../Src/HAL/Src/nrfx/HAL_watchdog.c" />
+            <file file_name="../../../../../Src/HAL/Src/nrfx/HAL_power.c" />
+            <file file_name="../../../../../Src/HAL/Src/nrfx/HAL_button.c" />
+            <file file_name="../../../../../Src/HAL/Src/nrfx/HAL_usb.c" />
+          </folder>
+        </folder>
+      </folder>
+      <folder Name="Apps">
+        <folder Name="Src">
+          <folder Name="common">
+            <folder Name="app">
+              <folder Name="common">
+                <file file_name="../../../../../Src/Apps/Src/common/app/common/app.c" />
+              </folder>
+            </folder>
+            <folder Name="config">
+              <file file_name="../../../../../Src/Apps/Src/common/config/driver_app_config.c" />
+              <file file_name="../../../../../Src/Apps/Src/common/config/debug_config.c" />
+            </folder>
+            <folder Name="controlTask">
+              <file file_name="../../../../../Src/Apps/Src/common/controlTask/controlTask.c" />
+              <folder Name="FreeRTOS">
+                <file file_name="../../../../../Src/Apps/Src/common/controlTask/FreeRTOS/create_control_task.c" />
+              </folder>
+            </folder>
+            <folder Name="flushTask">
+              <file file_name="../../../../../Src/Apps/Src/common/flushTask/flushTask.c" />
+              <folder Name="FreeRTOS">
+                <file file_name="../../../../../Src/Apps/Src/common/flushTask/FreeRTOS/create_flush_task.c" />
+              </folder>
+            </folder>
+            <folder Name="defaultTask">
+              <folder Name="FreeRTOS">
+                <file file_name="../../../../../Src/Apps/Src/common/defaultTask/FreeRTOS/create_default_task.c" />
+              </folder>
+              <file file_name="../../../../../Src/Apps/Src/common/defaultTask/defaultTask.c" />
+            </folder>
+            <folder Name="usb_uart">
+              <file file_name="../../../../../Src/Apps/Src/common/usb_uart/usb_uart_tx.c" />
+              <file file_name="../../../../../Src/Apps/Src/common/usb_uart/usb_uart_rx.c" />
+            </folder>
+            <folder Name="thread">
+              <folder Name="FreeRTOS">
+                <file file_name="../../../../../Src/Apps/Src/common/thread/FreeRTOS/thread_fn.c" />
+              </folder>
+            </folder>
+            <folder Name="cmd">
+              <file file_name="../../../../../Src/Apps/Src/common/cmd/cmd_rf_tuning.c" />
+              <file file_name="../../../../../Src/Apps/Src/common/cmd/cmd.c" />
+              <file file_name="../../../../../Src/Apps/Src/common/cmd/cmd_fn.c" />
+            </folder>
+          </folder>
+          <folder Name="reporter">
+            <folder Name="usb_reporter">
+              <file file_name="../../../../../Src/Apps/Src/reporter/usb_reporter/usb_reporter.c" />
+            </folder>
+          </folder>
+          <folder Name="listener2">
+            <file file_name="../../../../../Src/Apps/Src/listener2/listener2.c" />
+            <folder Name="FreeRTOS">
+              <file file_name="../../../../../Src/Apps/Src/listener2/FreeRTOS/create_listener_task.c" />
+            </folder>
+            <file file_name="../../../../../Src/Apps/Src/listener2/task_listener2.c" />
+            <file file_name="../../../../../Src/Apps/Src/listener2/listener_fn2.c" />
+            <file file_name="../../../../../Src/Apps/Src/listener2/listener2_dw3000.c" />
+          </folder>
+          <folder Name="tcfm_tcwm">
+            <folder Name="tcfm">
+              <file file_name="../../../../../Src/Apps/Src/tcfm_tcwm/tcfm/tcfm_fn.c" />
+              <file file_name="../../../../../Src/Apps/Src/tcfm_tcwm/tcfm/task_tcfm.c" />
+              <file file_name="../../../../../Src/Apps/Src/tcfm_tcwm/tcfm/tcfm_dw3000.c" />
+            </folder>
+            <folder Name="tcwm">
+              <file file_name="../../../../../Src/Apps/Src/tcfm_tcwm/tcwm/tcwm_fn.c" />
+              <file file_name="../../../../../Src/Apps/Src/tcfm_tcwm/tcwm/tcwm.c" />
+              <file file_name="../../../../../Src/Apps/Src/tcfm_tcwm/tcwm/task_tcwm.c" />
+            </folder>
+            <folder Name="FreeRTOS">
+              <file file_name="../../../../../Src/Apps/Src/tcfm_tcwm/FreeRTOS/create_tcfm_task.c" />
+              <file file_name="../../../../../Src/Apps/Src/tcfm_tcwm/FreeRTOS/create_tcwm_task.c" />
+            </folder>
+          </folder>
+          <folder Name="fira">
+            <file file_name="../../../../../Src/Apps/Src/fira/common_fira.c" />
+            <file file_name="../../../../../Src/Apps/Src/fira/fira_app_config.c" />
+            <file file_name="../../../../../Src/Apps/Src/fira/fira_app.c" />
+            <folder Name="FreeRTOS">
+              <file file_name="../../../../../Src/Apps/Src/fira/FreeRTOS/create_fira_app_task.c" />
+            </folder>
+            <file file_name="../../../../../Src/Apps/Src/fira/fira_fn.c" />
+            <file file_name="../../../../../Src/Apps/Src/fira/fira_dw3000.c" />
+          </folder>
+        </folder>
+      </folder>
+      <folder Name="UWB">
+        <file file_name="../../../../../Src/UWB/dw3000_lp_mcu.c" />
+        <folder Name="FreeRTOS">
+          <file file_name="../../../../../Src/UWB/FreeRTOS/create_mcps_Task_dw3000.c" />
+          <file file_name="../../../../../Src/UWB/FreeRTOS/create_report_task.c" />
+        </folder>
+        <file file_name="../../../../../Src/UWB/dw3000_mcps_mcu.c" />
+        <file file_name="../../../../../Src/UWB/dw3000_calib_mcu.c" />
+        <file file_name="../../../../../Src/UWB/dw3000_xtal_trim.c" />
+        <file file_name="../../../../../Src/UWB/dw3000_statistics.c" />
+        <file file_name="../../../../../Src/UWB/dw3000_pdoa.c" />
+        <file file_name="../../../../../Src/UWB/uwbmac_platform.c" />
+      </folder>
+      <folder Name="Comm">
+        <folder Name="Src">
+          <file file_name="../../../../../Src/Comm/Src/InterfUsb.c" />
+          <file file_name="../../../../../Src/Comm/Src/comm_config.c" />
+        </folder>
+      </folder>
+      <folder Name="Helpers">
+        <file file_name="../../../../../Src/Helpers/crc16.c" />
+        <file file_name="../../../../../Src/Helpers/cJSON.c" />
+        <file file_name="../../../../../Src/Helpers/deca_dbg.c" />
+      </folder>
+      <folder Name="SecureComponent">
+        <folder Name="Crypto">
+          <folder Name="Nordic">
+            <file file_name="../../../../../Src/SecureComponent/Crypto/Nordic/mcps_crypto.c" />
+          </folder>
+        </folder>
+      </folder>
+    </folder>
+    <folder Name="Libs">
+      <folder Name="uwbstack">
+        <folder Name="uwbstack_lib">
+          <folder Name="lib">
+            <folder Name="cmsis_v1">
+              <folder Name="embedded_mac">
+                <file file_name="../../../../../Libs/uwbstack/uwbstack_lib/lib/cmsis_v1/embedded_mac/libembedded_mac_arm-m4-hfp_R11.9.2.a" />
+                <configuration Name="Common" build_exclude_from_build="Yes" />
+              </folder>
+            </folder>
+          </folder>
+        </folder>
+      </folder>
+      <folder Name="dwt_uwb_driver">
+        <folder Name="lib">
+          <file file_name="../../../../../Libs/dwt_uwb_driver/lib/libdwt_uwb_driver-m4-hfp-6.0.14.a" />
+          <configuration Name="Common" build_exclude_from_build="Yes" />
+        </folder>
+      </folder>
+    </folder>
+  </project>
+</solution>
