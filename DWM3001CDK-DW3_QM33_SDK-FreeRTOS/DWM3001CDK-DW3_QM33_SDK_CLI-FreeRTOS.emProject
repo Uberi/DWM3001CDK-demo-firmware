@@ -18,7 +18,7 @@
       build_intermediate_directory="Output/$(ProjectName) $(Configuration)/Obj/$(FolderName)"
       c_additional_options="-mfloat-abi=hard;-ffunction-sections;-mfpu=fpv4-sp-d16;-std=c11;-g3;-fdata-sections;-O3;-Wall;-mthumb;-mcpu=cortex-m4"
       c_preprocessor_definitions="UWBMAC_BUF_PLATFORM_H=&quot;uwbmac/uwbmac_buf_malloc.h&quot;;UWBMAC_VERSION=&quot;R11.9.2&quot;;CLI_BUILD;BOARD_CUSTOM;USB_ENABLE;NRF_CRYPTO_BACKEND_MBEDTLS_ENABLED=1;NRF_CRYPTO_ALLOCATOR=NRF_CRYPTO_ALLOCATOR_MALLOC;MBEDTLS_CMAC_C;PROJECT_NAME=&quot;DW3_QM33_SDK&quot;;NRF52833_XXAA;UWBSTACK"
-      c_user_include_directories="third-party/libdwt_uwb_driver;third-party/libuwbstack/compat/common;third-party/libuwbstack/compat/cmsis;third-party/libuwbstack/compat;third-party/libuwbstack/mcps;third-party/libuwbstack;third-party/libuwbstack/uwbmac;third-party/libuwbstack/uwb_driver_interface;Src/Apps/fira;Src/Helpers;Src/Apps/tcfm_tcwm;Src/Apps/tcfm_tcwm/tcfm;Src/Apps/tcfm_tcwm/tcwm;Src/Apps/listener2;Src/Apps/common;Src/Apps/listener2/FreeRTOS;Src/Comm;Src/Apps/reporter;Src/Apps/reporter/usb_reporter;Src/UWB;Src/UWB/dw;Src/UWB/FreeRTOS;Src/Apps/common/app/common;Src/Apps/common/cmd;Src/Apps/common/config;Src/Apps/common/controlTask;Src/Apps/common/defaultTask;Src/Apps/common/flushTask;Src/Apps/common/thread;Src/Apps/common/usb_uart;Src/Apps;Src/HAL;Src/Boards;Src/OSAL;Src/Config;/usr/local/nRF5_SDK_17.1.0_ddde560/external/freertos/source/include;/usr/local/nRF5_SDK_17.1.0_ddde560/external/freertos/portable/GCC/nrf52;/usr/local/nRF5_SDK_17.1.0_ddde560/external/freertos/portable/CMSIS/nrf52;/usr/local/nRF5_SDK_17.1.0_ddde560/integration/nrfx/legacy;/usr/local/nRF5_SDK_17.1.0_ddde560/modules/nrfx;/usr/local/nRF5_SDK_17.1.0_ddde560/modules/nrfx/hal;/usr/local/nRF5_SDK_17.1.0_ddde560/modules/nrfx/drivers/include;/usr/local/nRF5_SDK_17.1.0_ddde560/components/boards;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/atomic;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/delay;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/fifo;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/log;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/log/src;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/uart;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/usbd;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/timer;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/usbd/class/cdc;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/usbd/class/cdc/acm;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/experimental_section_vars;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/strerror;/usr/local/nRF5_SDK_17.1.0_ddde560/modules/nrfx/mdk;/usr/local/nRF5_SDK_17.1.0_ddde560/integration/nrfx;/usr/local/nRF5_SDK_17.1.0_ddde560/components/toolchain/cmsis/include;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/util;/usr/local/nRF5_SDK_17.1.0_ddde560/components/drivers_nrf/nrf_soc_nosd;/usr/local/nRF5_SDK_17.1.0_ddde560/external/utf_converter;/usr/local/nRF5_SDK_17.1.0_ddde560/external/mbedtls/include;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/fds;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/crypto;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/crypto/backend/cc310;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/crypto/backend/mbedtls;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/crypto/backend/cifra;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/crypto/backend/oberon;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/crypto/backend/nrf_hw;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/crypto/backend/optiga;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/stack_info;/usr/local/nRF5_SDK_17.1.0_ddde560;Src"
+      c_user_include_directories="third-party/libdwt_uwb_driver;third-party/libuwbstack/compat/common;third-party/libuwbstack/compat/cmsis;third-party/libuwbstack/compat;third-party/libuwbstack/mcps;third-party/libuwbstack;third-party/libuwbstack/uwbmac;third-party/libuwbstack/uwb_driver_interface;Src/Apps;Src/Helpers;Src/Comm;Src/UWB;Src/UWB/dw;Src/UWB/FreeRTOS;Src/Apps/cmd;Src/Apps/config;Src/Apps/controlTask;Src/Apps/defaultTask;Src/Apps/flushTask;Src/HAL;Src/Boards;Src/OSAL;Src/Config;/usr/local/nRF5_SDK_17.1.0_ddde560/external/freertos/source/include;/usr/local/nRF5_SDK_17.1.0_ddde560/external/freertos/portable/GCC/nrf52;/usr/local/nRF5_SDK_17.1.0_ddde560/external/freertos/portable/CMSIS/nrf52;/usr/local/nRF5_SDK_17.1.0_ddde560/integration/nrfx/legacy;/usr/local/nRF5_SDK_17.1.0_ddde560/modules/nrfx;/usr/local/nRF5_SDK_17.1.0_ddde560/modules/nrfx/hal;/usr/local/nRF5_SDK_17.1.0_ddde560/modules/nrfx/drivers/include;/usr/local/nRF5_SDK_17.1.0_ddde560/components/boards;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/atomic;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/delay;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/fifo;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/log;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/log/src;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/uart;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/usbd;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/timer;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/usbd/class/cdc;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/usbd/class/cdc/acm;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/experimental_section_vars;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/strerror;/usr/local/nRF5_SDK_17.1.0_ddde560/modules/nrfx/mdk;/usr/local/nRF5_SDK_17.1.0_ddde560/integration/nrfx;/usr/local/nRF5_SDK_17.1.0_ddde560/components/toolchain/cmsis/include;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/util;/usr/local/nRF5_SDK_17.1.0_ddde560/components/drivers_nrf/nrf_soc_nosd;/usr/local/nRF5_SDK_17.1.0_ddde560/external/utf_converter;/usr/local/nRF5_SDK_17.1.0_ddde560/external/mbedtls/include;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/fds;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/crypto;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/crypto/backend/cc310;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/crypto/backend/mbedtls;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/crypto/backend/cifra;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/crypto/backend/oberon;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/crypto/backend/nrf_hw;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/crypto/backend/optiga;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/stack_info;/usr/local/nRF5_SDK_17.1.0_ddde560;Src"
       debug_register_definition_file="/usr/local/nRF5_SDK_17.1.0_ddde560/modules/nrfx/mdk/nrf52840.svd"
       debug_start_from_entry_point_symbol="No"
       debug_target_connection="J-Link"
@@ -69,89 +69,38 @@
         <file file_name="Src/HAL/HAL_usb.c" />
       </folder>
       <folder Name="Apps">
-        <folder Name="common">
-          <folder Name="app">
-            <folder Name="common">
-              <file file_name="Src/Apps/common/app/common/app.c" />
-            </folder>
-          </folder>
-          <folder Name="config">
-            <file file_name="Src/Apps/common/config/driver_app_config.c" />
-            <file file_name="Src/Apps/common/config/debug_config.c" />
-          </folder>
-          <folder Name="controlTask">
-            <file file_name="Src/Apps/common/controlTask/controlTask.c" />
-            <folder Name="FreeRTOS">
-              <file file_name="Src/Apps/common/controlTask/FreeRTOS/create_control_task.c" />
-            </folder>
-          </folder>
-          <folder Name="flushTask">
-            <file file_name="Src/Apps/common/flushTask/flushTask.c" />
-            <folder Name="FreeRTOS">
-              <file file_name="Src/Apps/common/flushTask/FreeRTOS/create_flush_task.c" />
-            </folder>
-          </folder>
-          <folder Name="defaultTask">
-            <folder Name="FreeRTOS">
-              <file file_name="Src/Apps/common/defaultTask/FreeRTOS/create_default_task.c" />
-            </folder>
-            <file file_name="Src/Apps/common/defaultTask/defaultTask.c" />
-          </folder>
-          <folder Name="usb_uart">
-            <file file_name="Src/Apps/common/usb_uart/usb_uart_tx.c" />
-            <file file_name="Src/Apps/common/usb_uart/usb_uart_rx.c" />
-          </folder>
-          <folder Name="thread">
-            <folder Name="FreeRTOS">
-              <file file_name="Src/Apps/common/thread/FreeRTOS/thread_fn.c" />
-            </folder>
-          </folder>
-          <folder Name="cmd">
-            <file file_name="Src/Apps/common/cmd/cmd_rf_tuning.c" />
-            <file file_name="Src/Apps/common/cmd/cmd.c" />
-            <file file_name="Src/Apps/common/cmd/cmd_fn.c" />
-          </folder>
+        <folder Name="config">
+          <file file_name="Src/Apps/config/driver_app_config.c" />
+          <file file_name="Src/Apps/config/debug_config.c" />
         </folder>
-        <folder Name="reporter">
-          <folder Name="usb_reporter">
-            <file file_name="Src/Apps/reporter/usb_reporter/usb_reporter.c" />
-          </folder>
+        <folder Name="controlTask">
+          <file file_name="Src/Apps/controlTask/controlTask.c" />
+          <file file_name="Src/Apps/controlTask/create_control_task.c" />
         </folder>
-        <folder Name="listener2">
-          <file file_name="Src/Apps/listener2/listener2.c" />
-          <folder Name="FreeRTOS">
-            <file file_name="Src/Apps/listener2/FreeRTOS/create_listener_task.c" />
-          </folder>
-          <file file_name="Src/Apps/listener2/task_listener2.c" />
-          <file file_name="Src/Apps/listener2/listener_fn2.c" />
-          <file file_name="Src/Apps/listener2/listener2_dw3000.c" />
+        <folder Name="flushTask">
+          <file file_name="Src/Apps/flushTask/flushTask.c" />
+          <file file_name="Src/Apps/flushTask/create_flush_task.c" />
         </folder>
-        <folder Name="tcfm_tcwm">
-          <folder Name="tcfm">
-            <file file_name="Src/Apps/tcfm_tcwm/tcfm/tcfm_fn.c" />
-            <file file_name="Src/Apps/tcfm_tcwm/tcfm/task_tcfm.c" />
-            <file file_name="Src/Apps/tcfm_tcwm/tcfm/tcfm_dw3000.c" />
-          </folder>
-          <folder Name="tcwm">
-            <file file_name="Src/Apps/tcfm_tcwm/tcwm/tcwm_fn.c" />
-            <file file_name="Src/Apps/tcfm_tcwm/tcwm/tcwm.c" />
-            <file file_name="Src/Apps/tcfm_tcwm/tcwm/task_tcwm.c" />
-          </folder>
-          <folder Name="FreeRTOS">
-            <file file_name="Src/Apps/tcfm_tcwm/FreeRTOS/create_tcfm_task.c" />
-            <file file_name="Src/Apps/tcfm_tcwm/FreeRTOS/create_tcwm_task.c" />
-          </folder>
+        <folder Name="defaultTask">
+          <file file_name="Src/Apps/defaultTask/defaultTask.c" />
+          <file file_name="Src/Apps/defaultTask/create_default_task.c" />
         </folder>
-        <folder Name="fira">
-          <file file_name="Src/Apps/fira/common_fira.c" />
-          <file file_name="Src/Apps/fira/fira_app_config.c" />
-          <file file_name="Src/Apps/fira/fira_app.c" />
-          <folder Name="FreeRTOS">
-            <file file_name="Src/Apps/fira/FreeRTOS/create_fira_app_task.c" />
-          </folder>
-          <file file_name="Src/Apps/fira/fira_fn.c" />
-          <file file_name="Src/Apps/fira/fira_dw3000.c" />
+        <folder Name="cmd">
+          <file file_name="Src/Apps/cmd/cmd_rf_tuning.c" />
+          <file file_name="Src/Apps/cmd/cmd.c" />
+          <file file_name="Src/Apps/cmd/cmd_fn.c" />
         </folder>
+        <file file_name="Src/Apps/common_fira.c" />
+        <file file_name="Src/Apps/fira_app_config.c" />
+        <file file_name="Src/Apps/fira_app.c" />
+        <file file_name="Src/Apps/create_fira_app_task.c" />
+        <file file_name="Src/Apps/fira_fn.c" />
+        <file file_name="Src/Apps/fira_dw3000.c" />
+        <file file_name="Src/Apps/reporter.c" />
+        <file file_name="Src/Apps/app.c" />
+        <file file_name="Src/Apps/usb_uart_tx.c" />
+        <file file_name="Src/Apps/usb_uart_rx.c" />
+        <file file_name="Src/Apps/thread_fn.c" />
       </folder>
       <folder Name="UWB">
         <file file_name="Src/UWB/dw3000_lp_mcu.c" />

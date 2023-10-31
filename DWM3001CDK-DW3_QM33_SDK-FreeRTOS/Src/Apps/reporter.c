@@ -1,7 +1,7 @@
 /**
- * @file      task_tcwm.h
+ * @file      usb_reporter.c
  *
- * @brief     Header file for task_tcwm.c
+ * @brief
  *
  * @author    Decawave Applications
  *
@@ -49,18 +49,25 @@
  *
  */
 
-#ifndef TASK_TCWM_H_
-#define TASK_TCWM_H_ 1
+#include <string.h>
+#include "reporter.h"
+#include "usb_uart_tx.h"
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
-void tcwm_helper(void const *arg);
-void tcwm_terminate(void);
+static error_e usb_print(char *buff, int len);
+static void usb_init(void);
 
-#ifdef __cplusplus
+reporter_t reporter_instance = {
+    .init = usb_init,
+    .print = usb_print
+};
+
+static error_e usb_print(char *buff, int len)
+{
+    return port_tx_msg((uint8_t *)buff, len);
 }
-#endif
 
-#endif /* TASK_TCWM_H_ */
+static void usb_init(void)
+{
+    return;
+}
