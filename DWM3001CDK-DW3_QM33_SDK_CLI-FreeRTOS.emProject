@@ -18,7 +18,7 @@
       build_intermediate_directory="Output/$(ProjectName) $(Configuration)/Obj/$(FolderName)"
       c_additional_options="-mfloat-abi=hard;-ffunction-sections;-mfpu=fpv4-sp-d16;-std=c11;-g3;-fdata-sections;-O3;-Wall;-mthumb;-mcpu=cortex-m4"
       c_preprocessor_definitions="UWBMAC_BUF_PLATFORM_H=&quot;uwbmac/uwbmac_buf_malloc.h&quot;;UWBMAC_VERSION=&quot;R11.9.2&quot;;CLI_BUILD;BOARD_CUSTOM;USB_ENABLE;NRF_CRYPTO_BACKEND_MBEDTLS_ENABLED=1;NRF_CRYPTO_ALLOCATOR=NRF_CRYPTO_ALLOCATOR_MALLOC;MBEDTLS_CMAC_C;PROJECT_NAME=&quot;DW3_QM33_SDK&quot;;NRF52833_XXAA;UWBSTACK"
-      c_user_include_directories="third-party/libdwt_uwb_driver;third-party/libuwbstack/compat/common;third-party/libuwbstack/compat/cmsis;third-party/libuwbstack/compat;third-party/libuwbstack/mcps;third-party/libuwbstack;third-party/libuwbstack/uwbmac;third-party/libuwbstack/uwb_driver_interface;Src/Apps;Src/Helpers;Src/Comm;Src/UWB;Src/UWB/dw;Src/UWB/FreeRTOS;Src/Apps/cmd;Src/Apps/config;Src/Apps/controlTask;Src/Apps/defaultTask;Src/Apps/flushTask;Src/HAL;Src/Boards;Src/OSAL;Src/Config;/usr/local/nRF5_SDK_17.1.0_ddde560/external/freertos/source/include;/usr/local/nRF5_SDK_17.1.0_ddde560/external/freertos/portable/GCC/nrf52;/usr/local/nRF5_SDK_17.1.0_ddde560/external/freertos/portable/CMSIS/nrf52;/usr/local/nRF5_SDK_17.1.0_ddde560/integration/nrfx/legacy;/usr/local/nRF5_SDK_17.1.0_ddde560/modules/nrfx;/usr/local/nRF5_SDK_17.1.0_ddde560/modules/nrfx/hal;/usr/local/nRF5_SDK_17.1.0_ddde560/modules/nrfx/drivers/include;/usr/local/nRF5_SDK_17.1.0_ddde560/components/boards;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/atomic;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/delay;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/fifo;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/log;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/log/src;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/uart;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/usbd;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/timer;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/usbd/class/cdc;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/usbd/class/cdc/acm;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/experimental_section_vars;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/strerror;/usr/local/nRF5_SDK_17.1.0_ddde560/modules/nrfx/mdk;/usr/local/nRF5_SDK_17.1.0_ddde560/integration/nrfx;/usr/local/nRF5_SDK_17.1.0_ddde560/components/toolchain/cmsis/include;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/util;/usr/local/nRF5_SDK_17.1.0_ddde560/components/drivers_nrf/nrf_soc_nosd;/usr/local/nRF5_SDK_17.1.0_ddde560/external/utf_converter;/usr/local/nRF5_SDK_17.1.0_ddde560/external/mbedtls/include;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/fds;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/crypto;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/crypto/backend/cc310;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/crypto/backend/mbedtls;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/crypto/backend/cifra;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/crypto/backend/oberon;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/crypto/backend/nrf_hw;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/crypto/backend/optiga;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/stack_info;/usr/local/nRF5_SDK_17.1.0_ddde560;Src"
+      c_user_include_directories="third-party/libdwt_uwb_driver;third-party/libuwbstack/compat/common;third-party/libuwbstack/compat/cmsis;third-party/libuwbstack/compat;third-party/libuwbstack/mcps;third-party/libuwbstack;third-party/libuwbstack/uwbmac;third-party/libuwbstack/uwb_driver_interface;src/Apps;src/Helpers;src/Comm;src/UWB;src/UWB/dw;src/UWB/FreeRTOS;src/Apps/cmd;src/Apps/config;src/Apps/controlTask;src/Apps/defaultTask;src/Apps/flushTask;src/HAL;src/Boards;src/OSAL;src/Config;/usr/local/nRF5_SDK_17.1.0_ddde560/external/freertos/source/include;/usr/local/nRF5_SDK_17.1.0_ddde560/external/freertos/portable/GCC/nrf52;/usr/local/nRF5_SDK_17.1.0_ddde560/external/freertos/portable/CMSIS/nrf52;/usr/local/nRF5_SDK_17.1.0_ddde560/integration/nrfx/legacy;/usr/local/nRF5_SDK_17.1.0_ddde560/modules/nrfx;/usr/local/nRF5_SDK_17.1.0_ddde560/modules/nrfx/hal;/usr/local/nRF5_SDK_17.1.0_ddde560/modules/nrfx/drivers/include;/usr/local/nRF5_SDK_17.1.0_ddde560/components/boards;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/atomic;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/delay;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/fifo;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/log;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/log/src;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/uart;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/usbd;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/timer;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/usbd/class/cdc;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/usbd/class/cdc/acm;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/experimental_section_vars;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/strerror;/usr/local/nRF5_SDK_17.1.0_ddde560/modules/nrfx/mdk;/usr/local/nRF5_SDK_17.1.0_ddde560/integration/nrfx;/usr/local/nRF5_SDK_17.1.0_ddde560/components/toolchain/cmsis/include;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/util;/usr/local/nRF5_SDK_17.1.0_ddde560/components/drivers_nrf/nrf_soc_nosd;/usr/local/nRF5_SDK_17.1.0_ddde560/external/utf_converter;/usr/local/nRF5_SDK_17.1.0_ddde560/external/mbedtls/include;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/fds;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/crypto;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/crypto/backend/cc310;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/crypto/backend/mbedtls;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/crypto/backend/cifra;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/crypto/backend/oberon;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/crypto/backend/nrf_hw;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/crypto/backend/optiga;/usr/local/nRF5_SDK_17.1.0_ddde560/components/libraries/stack_info;/usr/local/nRF5_SDK_17.1.0_ddde560;src"
       debug_register_definition_file="/usr/local/nRF5_SDK_17.1.0_ddde560/modules/nrfx/mdk/nrf52840.svd"
       debug_start_from_entry_point_symbol="No"
       debug_target_connection="J-Link"
@@ -40,97 +40,97 @@
       project_directory=""
       project_type="Executable"
     />
-    <folder Name="Src">
+    <folder Name="src">
       <folder Name="Config">
-        <file file_name="Src/Config/config.c" />
+        <file file_name="src/Config/config.c" />
       </folder>
       <folder Name="OSAL">
-        <file file_name="Src/OSAL/alloc.c" />
-        <file file_name="Src/OSAL/cmsis_os.c" />
-        <file file_name="Src/OSAL/task_signal.c" />
+        <file file_name="src/OSAL/alloc.c" />
+        <file file_name="src/OSAL/cmsis_os.c" />
+        <file file_name="src/OSAL/task_signal.c" />
       </folder>
       <folder Name="Boards">
-        <file file_name="Src/Boards/board.c" />
-        <file file_name="Src/Boards/rf_tuning_config.c" />
-        <file file_name="Src/Boards/DWM3001CDK.c" />
+        <file file_name="src/Boards/board.c" />
+        <file file_name="src/Boards/rf_tuning_config.c" />
+        <file file_name="src/Boards/DWM3001CDK.c" />
       </folder>
       <folder Name="HAL">
-        <file file_name="Src/HAL/HAL_error.c" />
-        <file file_name="Src/HAL/HAL_sleep.c" />
-        <file file_name="Src/HAL/HAL_DW3000.c" />
-        <file file_name="Src/HAL/HAL_gpio.c" />
-        <file file_name="Src/HAL/HAL_timer.c" />
-        <file file_name="Src/HAL/HAL_RTC.c" />
-        <file file_name="Src/HAL/HAL_SPI.c" />
-        <file file_name="Src/HAL/HAL_uart.c" />
-        <file file_name="Src/HAL/HAL_watchdog.c" />
-        <file file_name="Src/HAL/HAL_power.c" />
-        <file file_name="Src/HAL/HAL_button.c" />
-        <file file_name="Src/HAL/HAL_usb.c" />
+        <file file_name="src/HAL/HAL_error.c" />
+        <file file_name="src/HAL/HAL_sleep.c" />
+        <file file_name="src/HAL/HAL_DW3000.c" />
+        <file file_name="src/HAL/HAL_gpio.c" />
+        <file file_name="src/HAL/HAL_timer.c" />
+        <file file_name="src/HAL/HAL_RTC.c" />
+        <file file_name="src/HAL/HAL_SPI.c" />
+        <file file_name="src/HAL/HAL_uart.c" />
+        <file file_name="src/HAL/HAL_watchdog.c" />
+        <file file_name="src/HAL/HAL_power.c" />
+        <file file_name="src/HAL/HAL_button.c" />
+        <file file_name="src/HAL/HAL_usb.c" />
       </folder>
       <folder Name="Apps">
         <folder Name="config">
-          <file file_name="Src/Apps/config/driver_app_config.c" />
-          <file file_name="Src/Apps/config/debug_config.c" />
+          <file file_name="src/Apps/config/driver_app_config.c" />
+          <file file_name="src/Apps/config/debug_config.c" />
         </folder>
         <folder Name="controlTask">
-          <file file_name="Src/Apps/controlTask/controlTask.c" />
-          <file file_name="Src/Apps/controlTask/create_control_task.c" />
+          <file file_name="src/Apps/controlTask/controlTask.c" />
+          <file file_name="src/Apps/controlTask/create_control_task.c" />
         </folder>
         <folder Name="flushTask">
-          <file file_name="Src/Apps/flushTask/flushTask.c" />
-          <file file_name="Src/Apps/flushTask/create_flush_task.c" />
+          <file file_name="src/Apps/flushTask/flushTask.c" />
+          <file file_name="src/Apps/flushTask/create_flush_task.c" />
         </folder>
         <folder Name="defaultTask">
-          <file file_name="Src/Apps/defaultTask/defaultTask.c" />
-          <file file_name="Src/Apps/defaultTask/create_default_task.c" />
+          <file file_name="src/Apps/defaultTask/defaultTask.c" />
+          <file file_name="src/Apps/defaultTask/create_default_task.c" />
         </folder>
         <folder Name="cmd">
-          <file file_name="Src/Apps/cmd/cmd_rf_tuning.c" />
-          <file file_name="Src/Apps/cmd/cmd.c" />
-          <file file_name="Src/Apps/cmd/cmd_fn.c" />
+          <file file_name="src/Apps/cmd/cmd_rf_tuning.c" />
+          <file file_name="src/Apps/cmd/cmd.c" />
+          <file file_name="src/Apps/cmd/cmd_fn.c" />
         </folder>
-        <file file_name="Src/Apps/common_fira.c" />
-        <file file_name="Src/Apps/fira_app_config.c" />
-        <file file_name="Src/Apps/fira_app.c" />
-        <file file_name="Src/Apps/create_fira_app_task.c" />
-        <file file_name="Src/Apps/fira_fn.c" />
-        <file file_name="Src/Apps/fira_dw3000.c" />
-        <file file_name="Src/Apps/reporter.c" />
-        <file file_name="Src/Apps/app.c" />
-        <file file_name="Src/Apps/usb_uart_tx.c" />
-        <file file_name="Src/Apps/usb_uart_rx.c" />
-        <file file_name="Src/Apps/thread_fn.c" />
+        <file file_name="src/Apps/common_fira.c" />
+        <file file_name="src/Apps/fira_app_config.c" />
+        <file file_name="src/Apps/fira_app.c" />
+        <file file_name="src/Apps/create_fira_app_task.c" />
+        <file file_name="src/Apps/fira_fn.c" />
+        <file file_name="src/Apps/fira_dw3000.c" />
+        <file file_name="src/Apps/reporter.c" />
+        <file file_name="src/Apps/app.c" />
+        <file file_name="src/Apps/usb_uart_tx.c" />
+        <file file_name="src/Apps/usb_uart_rx.c" />
+        <file file_name="src/Apps/thread_fn.c" />
       </folder>
       <folder Name="UWB">
-        <file file_name="Src/UWB/dw3000_lp_mcu.c" />
+        <file file_name="src/UWB/dw3000_lp_mcu.c" />
         <folder Name="FreeRTOS">
-          <file file_name="Src/UWB/FreeRTOS/create_mcps_Task_dw3000.c" />
-          <file file_name="Src/UWB/FreeRTOS/create_report_task.c" />
+          <file file_name="src/UWB/FreeRTOS/create_mcps_Task_dw3000.c" />
+          <file file_name="src/UWB/FreeRTOS/create_report_task.c" />
         </folder>
-        <file file_name="Src/UWB/dw3000_mcps_mcu.c" />
-        <file file_name="Src/UWB/dw3000_calib_mcu.c" />
-        <file file_name="Src/UWB/dw3000_xtal_trim.c" />
-        <file file_name="Src/UWB/dw3000_statistics.c" />
-        <file file_name="Src/UWB/dw3000_pdoa.c" />
-        <file file_name="Src/UWB/uwbmac_platform.c" />
+        <file file_name="src/UWB/dw3000_mcps_mcu.c" />
+        <file file_name="src/UWB/dw3000_calib_mcu.c" />
+        <file file_name="src/UWB/dw3000_xtal_trim.c" />
+        <file file_name="src/UWB/dw3000_statistics.c" />
+        <file file_name="src/UWB/dw3000_pdoa.c" />
+        <file file_name="src/UWB/uwbmac_platform.c" />
       </folder>
       <folder Name="Comm">
-        <file file_name="Src/Comm/InterfUsb.c" />
-        <file file_name="Src/Comm/comm_config.c" />
+        <file file_name="src/Comm/InterfUsb.c" />
+        <file file_name="src/Comm/comm_config.c" />
       </folder>
       <folder Name="Helpers">
-        <file file_name="Src/Helpers/crc16.c" />
-        <file file_name="Src/Helpers/cJSON.c" />
-        <file file_name="Src/Helpers/deca_dbg.c" />
-        <file file_name="Src/Helpers/util.c" />
-        <file file_name="Src/Helpers/translate.c" />
+        <file file_name="src/Helpers/crc16.c" />
+        <file file_name="src/Helpers/cJSON.c" />
+        <file file_name="src/Helpers/deca_dbg.c" />
+        <file file_name="src/Helpers/util.c" />
+        <file file_name="src/Helpers/translate.c" />
       </folder>
-      <file file_name="Src/EventManager.c" />
-      <file file_name="Src/mcps_crypto.c" />
-      <file file_name="Src/main.c" />
-      <file file_name="Src/hooks.c" />
-      <file file_name="Src/isr_hs.c" />
+      <file file_name="src/EventManager.c" />
+      <file file_name="src/mcps_crypto.c" />
+      <file file_name="src/main.c" />
+      <file file_name="src/hooks.c" />
+      <file file_name="src/isr_hs.c" />
     </folder>
     <folder Name="third-party">
       <folder Name="Startup">
