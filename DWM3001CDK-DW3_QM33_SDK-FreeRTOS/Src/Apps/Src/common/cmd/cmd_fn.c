@@ -77,6 +77,7 @@
 #define CMD_COLUMN_WIDTH 10
 #define CMD_COLUMN_MAX   4
 //-----------------------------------------------------------------------------
+const char ProjectName[] = "DWM3001CDK - DW3_QM33_SDK - FreeRTOS";
 const char CMD_FN_RET_OK[] = "ok\r\n";
 const char CMD_FN_RET_KO[] = "KO\r\n";
 
@@ -286,7 +287,6 @@ REG_FN(f_decaJuniper)
 
     if (str)
     {
-        extern const char ProjectName[];
         int hlen;
 
         hlen = sprintf(str, "JS%04X", 0x5A5A); // reserve space for length of JS object
@@ -772,7 +772,6 @@ REG_FN(f_help_std)
     {
         CMD_ENTER_CRITICAL();
 
-        extern const char ProjectName[];
         reporter_instance.print((char *)ProjectName, strlen(ProjectName));
         reporter_instance.print("\r\n", 2);
 
