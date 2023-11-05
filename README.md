@@ -1,7 +1,7 @@
 DWM3001CDK Demo Firmware
 ========================
 
-A heavily-modified version of the [official firmware that runs on the Qorvo DWM3001CDK](https://www.qorvo.com/products/p/DWM3001CDK#documents) (as of 2023-10-30), with the following features:
+A heavily-modified version of the [official firmware that runs on the Qorvo DWM3001CDK](https://www.qorvo.com/products/p/DWM3001CDK#documents) (as of 2023-10-30), cleaned up and simplified for easier customization. Features:
 
 * **Reproducible**: built-in Docker development environment automates away most of the fragile and finicky parts of setting up the Qorvo SDK, SEGGER Embedded Studio, SEGGER J-Link, nRF52 SDK, and nRF command line tools.
 * **Minimal**: based on the official DWM3001CDK CLI project, but significantly simpler in terms of code size and organization. Many source files and folders have been consolidated to make the project much easier to navigate.
@@ -9,6 +9,8 @@ A heavily-modified version of the [official firmware that runs on the Qorvo DWM3
 * **Portable**: run `make save-development-environment` to generate a 5GB tar file containing the entire development environment. In 10 years from now, when half of these dependencies disappear off the internet, run `make load-development-environment` and you'll still be able to compile this project.
 
 Note that most of the UCI functionality has been removed, since I didn't end up needing it - only the UART CLI interface remains. Besides that, it has the exact same features as the original version of the firmware, including UWB ranging, calibration features, and more.
+
+**See also:** if you're building a custom firmware for the DWM3001C, check out my [DWM3001C starter firmware repository](https://github.com/Uberi/DWM3001C-starter-firmware/).
 
 Quickstart
 ----------
