@@ -38,7 +38,7 @@ TODO: just found this on the Qorvo forums: One initiator, two responders setup:
 Developing
 ----------
 
-You'll need Docker, and many of the hardware-facing commands in the Makefile assume you're using Linux.
+You'll need Docker, and many of the hardware-facing commands in the Makefile assume you're using Linux. The `make serial-terminal` command assumes you have `minicom`, `grep`, and `udevadm` installed.
 
 You can develop your custom applications by modifying `Src/main.c` and other files within `Src/`. Note that you'll have to manually edit `DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS.emProject` with any file additions/removals/renames. It sounds annoying, and it is, but I still consider it an improvement over directly interacting with the proprietary SEGGER Embedded Studio.
 
