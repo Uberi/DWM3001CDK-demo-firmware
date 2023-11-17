@@ -90,6 +90,11 @@ void peripherals_init(void)
       APP_ERROR_CHECK(err_code);
     }
 
+    // out of the box, this firmware has a bug where it isn't able to range without a USB UART connection
+    // the fix is to add the two lines below, published by carlos.silva from the Qorvo forums: https://forum.qorvo.com/t/dwm30001cdk-standalone-operation-without-connection-to-usb-uart/13446/16
+    nrf_drv_clock_hfclk_request(NULL);
+    while (!nrf_drv_clock_hfclk_is_running()) { /* spin lock */ }
+
     nrf_drv_clock_lfclk_request(NULL);
 
 #ifndef ENABLE_USB_PRINT
